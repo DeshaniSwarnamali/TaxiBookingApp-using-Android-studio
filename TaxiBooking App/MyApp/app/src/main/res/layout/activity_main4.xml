@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".MainActivity4">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="132dp"
+        android:layout_height="227dp"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:id="@+id/radio_cash"
+            android:layout_width="91dp"
+            android:layout_height="62dp"
+            android:onClick="checkButton"
+            android:text="Cash" />
+
+        <RadioButton
+            android:id="@+id/radio_credit"
+            android:layout_width="119dp"
+            android:layout_height="70dp"
+            android:onClick="checkButton"
+            android:text="Credit Card" />
+
+        <RadioButton
+            android:id="@+id/radio_coupon"
+            android:layout_width="97dp"
+            android:layout_height="62dp"
+            android:onClick="checkButton"
+            android:text="Coupon" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/selectionbox"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Your selection" />
+
+    <Button
+        android:id="@+id/radiobtnId"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectionbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/black"
+        android:text="CONFIRM"
+        android:textSize="17dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="318dp"
+        android:layout_height="51dp"
+        android:layout_alignTop="@+id/radio_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-247dp"
+        android:background="@color/white"
+        android:text="  PAYMENT METHODS  "
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="68dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/radio_group"
+        app:srcCompat="@drawable/card" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="71dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@+id/radio_group"
+        app:srcCompat="@drawable/coupon" />
+
+    <ImageView
+
+        android:id="@+id/imageView3"
+        android:layout_width="77dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="2dp"
+        android:layout_toStartOf="@+id/radio_group"
+        app:srcCompat="@drawable/cash" />
+
+    <ImageView
+        android:id="@+id/homebtnId"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="700dp"
+        android:layout_marginEnd="165dp"
+        android:src="@drawable/baseline_house_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
+
+
+</RelativeLayout>
